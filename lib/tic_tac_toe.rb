@@ -104,9 +104,8 @@ end
 
 def play(board)
   counter = turn_count(board)
-  until counter == 9 do
+  while counter < 9 do
     display_board(board)
-    turn(board)
     counter += 1
   end
 end
