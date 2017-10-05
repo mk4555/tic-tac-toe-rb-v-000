@@ -103,10 +103,10 @@ def winner(board)
 end
 
 def play(board)
-  counter = turn_count(board)
-  while counter < 9 do
+  while !over?(board) do
     display_board(board)
-    counter += 1
-    puts "count: #{counter} "
+    turn(board)
+    
+    # puts "count: #{counter} "
   end
 end
