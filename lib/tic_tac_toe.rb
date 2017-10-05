@@ -34,7 +34,6 @@ end
 def turn(board)
   puts "Enter number 1-9:"
   input = gets.chomp
-  # input.chomp
   index = input_to_index(input)
   if valid_move?(board, index)
     move(board, index, current_player(board))
