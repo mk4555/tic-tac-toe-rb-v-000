@@ -109,7 +109,7 @@ def play(board)
     # puts "count: #{counter} "
   end
   if won?(board)
-    puts "Congratulations #{won?(board)[0]}"
+    puts "Congratulations #{board[won?(board)][0]}"
   else
     puts "Cat's Game!"
   end
