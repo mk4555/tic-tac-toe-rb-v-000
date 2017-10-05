@@ -102,12 +102,18 @@ def winner(board)
 end
 
 def play(board)
+  display_board(board)
   puts "Please enter 1-9:"
   input = gets
   input = input.chomp
   input = input_to_index(input)
   counter = 0
   turn(board)
+  counter = turn_count(board)
+  until counter < 8 do
+    turn(board)
+    
+  end
   # until counter < 9 do
   #   display_board(board)
   #
