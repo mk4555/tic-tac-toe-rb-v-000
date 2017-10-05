@@ -103,9 +103,10 @@ def winner(board)
 end
 
 def play(board)
-  until turn_count(board) == 9 do
+  counter = turn_count(board)
+  until counter == 9 do
     display_board(board)
     turn(board)
-
+    counter += 1
   end
 end
