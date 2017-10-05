@@ -33,7 +33,7 @@ end
 
 def turn(board)
   puts "Enter number 1-9:"
-  input = gets.chomp
+  input = gets
   index = input_to_index(input)
   if valid_move?(board, index)
     move(board, index, current_player(board))
@@ -106,6 +106,6 @@ def play(board)
   until turn_count(board) == 9 do
     display_board(board)
     turn(board)
-    
+
   end
 end
