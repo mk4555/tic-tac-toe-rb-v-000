@@ -107,8 +107,8 @@ def play(board)
   input = input_to_index(input)
   counter = 0
   turn(board)
-  until counter < 9 do
-    display_board(board)
-
-  end
+  # until counter < 9 do
+  #   display_board(board)
+  # 
+  # end
 end
