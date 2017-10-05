@@ -79,3 +79,14 @@ end
 def full?(board)
   !board.any?{|position| position == " "}
 end
+
+def draw?(board)
+  if full?(board)
+    if won?(board)
+      false
+    else
+      true
+    end
+  end
+  false
+end
