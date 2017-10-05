@@ -106,7 +106,7 @@ def play(board)
   while !over?(board) do
     display_board(board)
     turn(board)
-    
+
     # puts "count: #{counter} "
   end
 end
