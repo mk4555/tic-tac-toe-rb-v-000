@@ -105,4 +105,4 @@ def play(board)
   puts "Please enter 1-9:"
   input = gets.chomp
   input = input_to_index(input)
-  
+end
