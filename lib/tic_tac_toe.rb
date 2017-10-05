@@ -107,5 +107,6 @@ def play(board)
   while counter < 9 do
     display_board(board)
     counter += 1
+    puts "count: #{counter} "
   end
 end
