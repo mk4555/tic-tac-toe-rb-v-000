@@ -113,7 +113,7 @@ def play(board)
   until counter < 8 do
     display_board(board)
     turn(board)
-
+    counter = turn_count(board)
   end
   # until counter < 9 do
   #   display_board(board)
