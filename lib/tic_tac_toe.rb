@@ -104,6 +104,7 @@ end
 def play(board)
   puts "Please enter 1-9:"
   input = gets
+  input = input.chomp
   input = input_to_index(input)
   counter = 0
   turn(board)
