@@ -106,7 +106,9 @@ def play(board)
   while !over?(board) do
     display_board(board)
     turn(board)
-
     # puts "count: #{counter} "
+  end
+  if won?(board)
+    puts "Congratulations #{won?(board)[0]}"
   end
 end
