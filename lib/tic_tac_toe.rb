@@ -106,6 +106,7 @@ def play(board)
   input = gets.chomp
   input = input_to_index(input)
   counter = 0
+  turn(board)
   until counter < 9 do
     display_board(board)
 
